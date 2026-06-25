@@ -219,7 +219,7 @@ table.cmp .mbar{max-width:80px}
 .mbody .muted{color:var(--muted);font-size:13px}
 /* table */
 .tablewrap{overflow-x:auto;border-radius:16px;box-shadow:var(--shadow);border:1px solid var(--line);background:#fff}
-table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:1320px}
+table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:760px}
 thead th{background:linear-gradient(120deg,var(--red),var(--red2));color:#fff;font-weight:600;text-align:left;padding:13px 13px;font-size:12.5px;white-space:nowrap}
 tbody td{padding:12px 13px;border-bottom:1px solid var(--line);vertical-align:middle}
 tbody tr:nth-child(even){background:#fafbfe}tbody tr:hover{background:#fff5f6}
@@ -231,6 +231,18 @@ tbody tr:nth-child(even){background:#fafbfe}tbody tr:hover{background:#fff5f6}
 .tc-co{white-space:normal;min-width:210px;max-width:250px}.colist{display:flex;flex-wrap:wrap;gap:4px}
 .cochip{font-size:10.5px;background:#eef2f9;color:#33384a;border:1px solid #e1e7f0;padding:2px 7px;border-radius:6px;font-weight:600;white-space:nowrap}
 .tc-open{text-align:center;white-space:nowrap}.opnum{font-weight:800;color:#1E88E5;font-size:14px}.oplbl{display:block;font-size:9.5px;color:#8a93a3;font-weight:600;letter-spacing:.3px}
+/* wide, fit-to-screen certification tables */
+.certsec .wrap{max-width:1560px}
+.certsec table{min-width:0;font-size:12px}
+.certsec thead th{padding:10px 8px;font-size:11px}
+.certsec tbody td{padding:8px 8px}
+.certsec .tc-name{font-size:12px}
+.certsec .tc-co{min-width:150px;max-width:200px}
+.certsec .colist{gap:3px}
+.certsec .cochip{font-size:9.5px;padding:1px 6px}
+.certsec .opnum{font-size:13px}
+.certsec .tc-pkg{font-size:12.5px}
+@media(min-width:1180px){.certsec table{table-layout:auto}}
 .legend{display:flex;gap:18px;flex-wrap:wrap;justify-content:center;margin-top:18px;font-size:12.5px;color:var(--muted)}
 .legend b{color:var(--ink)}
 /* packages */
@@ -640,7 +652,7 @@ tbody tr:nth-child(even){background:#fafbfe}tbody tr:hover{background:#fff5f6}
     <div class="stbar"><input class="stsearch" type="text" placeholder="&#128269;  Search by name or ID..." autocomplete="off"><div class="stcount"></div></div>
     <div class="stlist"></div>
   </div></div></section>
-<div class="modal" id="stmodal"><div class="modalcard"><button class="mclose" aria-label="Close">&times;</button><div class="mbody"></div></div></div><section class="section"><div class="wrap">
+<div class="modal" id="stmodal"><div class="modalcard"><button class="mclose" aria-label="Close">&times;</button><div class="mbody"></div></div></div><section class="section certsec"><div class="wrap">
   <div class="shead"><div class="ey">Master View</div><h2>Global Certifications at a Glance &mdash; CSE-Allied</h2>
     <p>The <b>14 global vendor certifications</b> (CSE-allied) with provider, exam, role, departments and the CRT / Non-CRT split.
     <b>Non-CSE</b> branch certifications are listed per branch in the <a href="#branches">All Branches</a> section.</p></div>
